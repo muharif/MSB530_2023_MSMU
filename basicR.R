@@ -162,7 +162,7 @@ u.2[[4]][,2]
 #BUILDING FUNCTIONS#
 ####################
 
-calculate_age <- function(birthyear, thisyear=2020){
+calculate_age <- function(birthyear, thisyear=2023){
   #selection, to check if birthyear is valid
   if(birthyear > thisyear){
     print('ERROR: Invalid birth year')
@@ -202,7 +202,7 @@ print_information('Arsene Wenger', calculate_age(1949), 'Strasbourg')
 #Don't change anything else.
 
 #Example:
-valid_birthyear <- function(birthyear, thisyear=2020){
+valid_birthyear <- function(birthyear, thisyear=2023){
   #WRITE YOUR CODE HERE
   if(birthyear > thisyear){
     return(FALSE)
@@ -216,13 +216,18 @@ valid_birthyear(1988) == TRUE
 valid_birthyear(2088) == FALSE
 #######################################################################
 
+## Scoring System
+## Solving 1-3 questions: 1
+## Solving 3-5 questions: 2
+## Solving 5-7 questions: 3
+## Solving 7-9 questions: 4
+## Solving all: 5
+
 #Question 1
+#Create a function to convert a temperature from fahrenheit to celcius.
 
 fahrenheit_to_celsius <- function(temp_F) {
   #WRITE YOUR CODE HERE
-  
-  
-  
   
   return(temp_C)
 }
@@ -231,6 +236,9 @@ fahrenheit_to_celsius(32) == 0
 fahrenheit_to_celsius(86) == 30
 
 #Question 2
+#find a temperature where it is (numerically) double in fahrenheit compared to its celcius scale. (limitation of scale from 1 to 400 F)
+#The answer is 320 (320 F = 160 C)
+#Create a function with loop and incorporate your function from Q1
 
 fahrenheit_double_celcius <- function(){
   for(i in 1:400){
@@ -243,6 +251,7 @@ fahrenheit_double_celcius <- function(){
 same_fahrenheit_celcius() == 320
 
 #Question 3
+#Make a function to check if a year is leap year.
 
 check_leap_year <- function(year){
   #WRITE YOUR CODE HERE
@@ -256,6 +265,7 @@ check_leap_year(1988) == TRUE
 check_leap_year(2000) == TRUE
 
 #Question 4
+#Create a function to wrap a text with a given wrapper.
 
 text_wrapper <- function(text, wrapper){
   #WRITE YOUR CODE HERE
@@ -267,6 +277,7 @@ text_wrapper('I love asterisks','****') == '****I love asterisks****'
 text_wrapper('Start and close with percent','%') == '%Start and close with percent%'
 
 #Question 5
+#Make a function to count the occurance of a number in a sentence
 
 count_numbers <- function(sentence){
   #WRITE YOUR CODE HERE
@@ -280,8 +291,9 @@ count_numbers('We need to add 1 teaspoon of sugar and 200 ml of water') == 2
 count_numbers('Arsenal scored 3 goals in Anfield, 2 from Auba and 1 from Laca') == 3
 
 #Question 6
-
 #We need at least 8 hours of sleep per day, but not more than 10 hours.
+#Make a function to check if a number of hour is within normal sleeping time range.
+
 enough_sleep <- function(hours){
   #WRITE YOUR CODE HERE
   
@@ -295,6 +307,7 @@ enough_sleep(8.5) == TRUE
 enough_sleep(6) == FALSE
 
 #Question 7
+#Make a function to check whether a word is inside a sentence. Remember that it is case sensitive.
 
 check_word <- function(word, sentence){
   #WRITE YOUR CODE HERE
@@ -304,22 +317,11 @@ check_word <- function(word, sentence){
   return(result)
 }
 
-check_word('Auba', 'Auba is the best player in the world') == TRUE
+check_word('Martinelli', 'Martinelli is the best player in the world') == TRUE
 check_word('WHO', 'Who let the dogs out?') == FALSE
 
 #Question 8
-
-check_word <- function(word, sentence){
-  #WRITE YOUR CODE HERE
-  
-  
-  return(result)
-}
-
-check_word('Auba', 'Auba is the best player in the world') == TRUE
-check_word('WHO', 'Who let the dogs out?') == FALSE
-
-#Question 9
+#Make a function to check whether a number is a prime number or not.
 
 own_is_prime <- function(number){
   #WRITE YOUR CODE HERE
@@ -334,12 +336,15 @@ own_is_prime(7) == TRUE
 own_is_prime(9719) == TRUE
 own_is_prime(8370) == FALSE
 
-#Question 10
+#Question 9
+#Make a function to count the prime numbers within a given range
+#Hint: Use the function from Question 8
 
 how_many_prime_between <- function(start,end){
   #WRITE YOUR CODE HERE
   #hint: use function from previous question to check prime numbers. construct a vector called "results" with all the prime numbers in the range.
   #hint: find a way to append new members to vector
+  #hint: loop
 
   
   #Observe: the output of the function is the length of vector "results".
@@ -350,9 +355,10 @@ how_many_prime_between(1,10) == 4
 how_many_prime_between(20,100) == 17
 how_many_prime_between(1000,4000) == 382
 
-#Bonus question: Make functions to print the sum of prime/fibonacci numbers between 2 numbers. Test it with any range that you want.
+#Question 10
+#Make functions to print the sum of prime numbers between 2 numbers. Test it with any range that you want.
 
-sum_bonus <- function(start,end){
+sum_prime <- function(start,end){
   #WRITE YOUR CODE HERE
 
   
