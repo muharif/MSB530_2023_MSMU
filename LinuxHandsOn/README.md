@@ -6,7 +6,7 @@ I think you guys did well here, all of you. So I'm not putting any answer here.
 
 ## Exercise 2
 
-Here's the solution to exercise 2
+Here's the one solution to exercise 2. I've seen different solutions from some of you and they worked too!
 
 ```shell
 
