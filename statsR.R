@@ -141,9 +141,9 @@ colMeans(df1)
 #VISUALIZATION#
 ###############
 
-install.packages(ggplot2) #do this just once
+install.packages('ggplot2') #do this just once
 
-library('ggplot2')
+library(ggplot2)
 mtcars = mtcars #built-in datasets
 
 ggplot(mtcars, aes(x=wt, y=mpg)) + geom_point()
@@ -169,7 +169,7 @@ heatmap(as.matrix(mtcars), scale="column")
 library(ggplot2)
 
 #Load file "DATA_SET_REFERENCE_1.txt" in "Data" folder
-df1 = read.csv('IntroductionToR/Data/DATA_SET_REFERENCE_1.csv',sep=',',stringsAsFactors = F, row.names = 1)
+df1 = read.csv('Data/DATA_SET_REFERENCE_1.csv',sep=',',stringsAsFactors = F, row.names = 1)
 View(df1)
 
 #Sort dataframe based on the 'Weight' columns
@@ -207,7 +207,7 @@ for(color in c('Blue','Brown','Red')){
 
 #how many patients have enough sleep? (>8 hours)
 
-dim(df1[df1$Sleep_hours > 8,])
+dim(df1[df1$Sleep_hours > 8,])[1]
 
 #Which house color has in average the highest level of hospitalization?
 
@@ -246,15 +246,17 @@ p <- ggplot(df1, aes(x=Sugar_blood)) + geom_density()
 p + geom_vline(aes(xintercept=median(Sugar_blood)),
                color="blue", linetype="dashed", size=1)
 
-p
-
+#if we want to add mean too
+p + geom_vline(aes(xintercept=median(Sugar_blood)), color="blue", linetype="dashed", size=1) + 
+  geom_vline(aes(xintercept=mean(Sugar_blood)),color="black", linetype="dashed", size=1)
 ##############
 #Excercises#
 ##############
 
 #Using similar approaches as before, summarize "DATA_SET_REFERENCE_2.txt" in "Data" folder.
+#It is ok to make your own "story".
 #Make a mini report (max 2 paragraph) in Microsoft Word about the data summary. Put some plots/figures (minimum 3 plots) to support your summary.
-
+#Upload the report together with your R script.
 
 
 
