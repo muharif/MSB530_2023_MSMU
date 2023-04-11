@@ -143,7 +143,7 @@ colMeans(df1)
 
 install.packages(ggplot2) #do this just once
 
-library(ggplot2)
+library('ggplot2')
 mtcars = mtcars #built-in datasets
 
 ggplot(mtcars, aes(x=wt, y=mpg)) + geom_point()
