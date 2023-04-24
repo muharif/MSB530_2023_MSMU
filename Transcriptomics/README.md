@@ -1,13 +1,15 @@
 ## Transcriptomics Data Analysis
-For this hands-on experience assignment, we will analyze transcriptomics data from real and published studies. To facilitate the analysis, we will use an online tool called [BioJupies](https://maayanlab.cloud/biojupies/).
+For this hands-on experience assignment, we will analyze transcriptomics data from real and published studies. To facilitate the analysis, we will use an online tool called [BioJupies](https://maayanlab.cloud/biojupies/). There are many other tools, including [Galaxy](https://usegalaxy.org) and [R-based tools](https://github.com/sysmedicine/phd2020/tree/master/transcriptomics)
 
 ## Data to Analyze
+
+**All count, metadata, and related articles are available on CANVAS. Go to "Files" --> "Handson" --> "Transcriptomics"**
 
 1. **Group 1**: Healthy vs Pulmonary Fibrosis Patient Lung (Human). The data can be retrieved from [GSE92592](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92592). Original Publication is [Cellular senescence mediates fibrotic pulmonary disease](https://www.nature.com/articles/ncomms14532)
 2. **Group 2**: Wild-Type (Control) vs 14 days Post-Pulmonary Fibrosis Lung (Mouse). The data can be retrieved from [GSE213709](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE213709). Original Publication is [An Integrative Multiomics Framework for Identification of Therapeutic Targets in Pulmonary Fibrosis](https://onlinelibrary.wiley.com/doi/10.1002/advs.202207454)
 3. **Group 3**: Wild-Type (Control) vs 24h Post-Myocardial Infarction heart (Mouse). The data can be retrieved from [GSE153485](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153485). Original Publication is [Integrative transcriptomic analysis of tissue-specific metabolic crosstalk after myocardial infarction](https://elifesciences.org/articles/66921)
-4. **Group 4**: Healthy vs Dilated Cardiomyopathy (DCM) Patient Heart (Human). The data can be retrieved from [GSE116250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116250). Original Publication is [Transcriptome analysis of human heart failure reveals dysregulated cell adhesion in dilated cardiomyopathy and activated immune pathways in ischemic heart failure](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5213-9)
-4. **Group 5**: Healthy vs Ischemic Cardiomyopathy (ICM) Patient Heart (Human). The data can be retrieved from [GSE116250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116250). Original Publication is [Transcriptome analysis of human heart failure reveals dysregulated cell adhesion in dilated cardiomyopathy and activated immune pathways in ischemic heart failure](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5213-9)
+4. **Group 4**: Healthy (non-failing) vs Dilated Cardiomyopathy (DCM) Patient Heart (Human). The data can be retrieved from [GSE116250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116250). Original Publication is [Transcriptome analysis of human heart failure reveals dysregulated cell adhesion in dilated cardiomyopathy and activated immune pathways in ischemic heart failure](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5213-9)
+4. **Group 5**: Healthy (non-failing) vs Ischemic Cardiomyopathy (ICM) Patient Heart (Human). The data can be retrieved from [GSE116250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116250). Original Publication is [Transcriptome analysis of human heart failure reveals dysregulated cell adhesion in dilated cardiomyopathy and activated immune pathways in ischemic heart failure](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5213-9)
 
 
 **Note 1: This is not group work! Feel free to work together with your group member if needed, but reports have to be individualized.**
@@ -40,5 +42,3 @@ My suggestion is to follow the format of the research paper:
 * (If comparing human vs mouse results) Do you think the disease model in mouse can mimic patients' conditions? (hint: Pathways/Gene Ontology)
 * (If comparing two different but similar diseases) What are the commonalities and differences between these diseases? (hint: Pathways/Gene Ontology)
 * While checking the pathways/gene ontology, do you think the data is good? Any known disease pathways/genes/ontology that you find there (based on other literatures)?
-
-
